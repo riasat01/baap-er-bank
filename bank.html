@@ -19,17 +19,17 @@
 
         <section class="mt-12">
             <div class="w-9/12 mx-auto grid grid-cols-3 gap-8">
-                <div id="deposit" class="bg-green-400 p-8 text-white rounded-xl">
+                <div class="bg-green-400 p-8 text-white rounded-xl">
                     <h2 class="text-2xl">Deposit</h2>
-                    <h4 class="text-5xl">$00</h4>
+                    <h4 class="text-5xl">$<span id="deposit">00</span></h4>
                 </div>
-                <div id="withdraw" class="bg-yellow-400 p-8 text-white rounded-xl">
+                <div class="bg-yellow-400 p-8 text-white rounded-xl">
                     <h2 class="text-2xl">Withdrow</h2>
-                    <h4 class="text-5xl">$00</h4>
+                    <h4 class="text-5xl">$<span id="withdraw">00</span></h4>
                 </div>
-                <div id="balance" class="bg-violet-400 p-8 text-white rounded-xl">
+                <div class="bg-violet-400 p-8 text-white rounded-xl">
                     <h2 class="text-2xl">Balance</h2>
-                    <h4 class="text-5xl">$1240</h4>
+                    <h4 class="text-5xl">$<span id="balance">1240</span></h4>
                 </div>
             </div>
         </section>
@@ -38,18 +38,19 @@
 
         <section class="mt-12">
             <div class="w-9/12 mx-auto grid grid-cols-2 gap-8">
-                <div class="bg-pink-400 p-8 text-white rounded-xl">
-                    <h2 class="text-2xl">Please enter the amount to deposit</h2>
-                    <input class="w-full block my-4 p-3" type="email" name="" id="user-deposit" placeholder="Please enter the amount to deposit">
+                <div class="bg-pink-400 p-8 rounded-xl">
+                    <h2 class="text-2xl text-white">Please enter the amount to deposit</h2>
+                    <input class="w-full block my-4 p-3" type="text" name="" id="user-deposit" placeholder="Please enter the amount to deposit">
                     <input id="btn-deposit" class="bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white font-medium px-8 py-3 text-whiter hover:from-purple-500 hover:to-pink-500" type="submit" value="Submit">
                 </div>
-                <div class="bg-orange-400 p-8 text-white rounded-xl">
-                    <h2 class="text-2xl">Please enter the amount to withdrow</h2>
-                    <input class="w-full block my-4 p-3" type="email" name="" id="user-withdrow" placeholder="Please enter the amount to withdrow">
-                    <input id="btn-withdrow" class="bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white font-medium px-8 py-3 text-whiter hover:from-purple-500 hover:to-pink-500" type="submit" value="Submit">
+                <div class="bg-orange-400 p-8 rounded-xl">
+                    <h2 class="text-2xl text-white">Please enter the amount to withdrow</h2>
+                    <input class="w-full block my-4 p-3" type="text" name="" id="user-withdraw" placeholder="Please enter the amount to withdrow">
+                    <input id="btn-withdraw" class="bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white font-medium px-8 py-3 text-whiter hover:from-purple-500 hover:to-pink-500" type="submit" value="Submit">
                 </div>
             </div>
         </section>
+        <script src="./js/bank.js"></script>
     </main>
 </body>
 
